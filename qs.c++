@@ -38,11 +38,17 @@ int main(){
         // else if (n<70){
         //     cout<<"Fail"<<endl;
         // }
-        int temp,p;
-        cin >> p;
-        temp = n;   
-        n = p;
-        p = temp;
+        // int temp,p;
+        // cin >> p;
+        // temp = n;   
+        // n = p;
+        // p = temp;
+        // cout << "Swapped values: " << n << " " << p << endl;
+        int p;
+        cin >>p;
+        n=n-p;
+        p=n+p;
+        n=p-n;
         cout << "Swapped values: " << n << " " << p << endl;
 
     
