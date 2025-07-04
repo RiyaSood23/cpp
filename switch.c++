@@ -12,7 +12,7 @@ int main() {
     cin >> op;
 
     switch (op) {
-        case '+':
+        case '+':  
             cout << "a+b = " << a + b << endl;
             break;
         case '-':
