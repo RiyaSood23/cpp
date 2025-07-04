@@ -20,11 +20,24 @@ int main(){
     //     cout << "Zero" << endl;
     // }
     // leap year
-    if ((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0)) {
-        cout << "Leap Year" << endl;
-    } else {
-        cout << "Not a Leap Year" << endl;
-    }
- 
+    // if ((n % 4 == 0 && n % 100 != 0) || (n % 400 == 0)) {
+    //     cout << "Leap Year" << endl;
+    // } else {
+    //     cout << "Not a Leap Year" << endl;
+    // }
+   
+         if (n>90 && n<=100){
+            cout<<"A"<<endl;
+        }
+        else if (n>80 && n<=90){
+            cout<<"B"<<endl;
+         }
+         else if (n>70 && n<=80){
+            cout<<"C"<<endl;
+        }
+        else if (n<70){
+            cout<<"Fail"<<endl;
+        }
+    
     return 0;
 }
