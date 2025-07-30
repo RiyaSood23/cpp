@@ -46,14 +46,14 @@ using namespace std;
 //     sum(a,b);
 // }
 
-int main(){
-    int a=10,b=15;
-    auto sum = [=] (){
-    ++a; 
-    ++b;
-    cout<<a<<" "<<b<<endl;
-};
+// int main(){
+//     int a=10,b=15;
+//     auto sum = [=] (){
+//     ++a; 
+//     ++b;
+//     cout<<a<<" "<<b<<endl;
+// };
     
-    inc();
-    return 0;
-}
+//     inc();
+//     return 0;
+// }
