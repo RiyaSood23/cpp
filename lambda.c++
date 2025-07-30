@@ -26,10 +26,22 @@ using namespace std;
 //pointer and reference are very similar 
 // pointer stores address of variable
 // reference denotes exact address
-auto add = [](int a, int b){
-    return a + b;
+// auto add = [](int a, int b){
+//     return a + b;
+// };
+// int main(){
+//     cout<<add(2,3)<<endl; // call by value lmbda wit parameters
+//     // for reference we use &
+//     return 0;
+// }
+// to passs multiple arguments together we use [] this can call upto 10 together
+// it sends a value to the lambda function
+// it checks in surrounding 
+auto sum = [=] (){
+    cout<<a+b<<endl;
 };
 int main(){
-    cout<<add(2,3)<<endl; // call by value lmbda wit parameters
-    return 0;
+    int a=5;
+    int b=7;
+    sum(a,b);
 }
