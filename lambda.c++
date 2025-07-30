@@ -37,11 +37,23 @@ using namespace std;
 // to passs multiple arguments together we use [] this can call upto 10 together
 // it sends a value to the lambda function
 // it checks in surrounding 
-auto sum = [=] (){
-    cout<<a+b<<endl;
-};
+// auto sum = [=] (){
+//     cout<<a+b<<endl;
+// };
+// int main(){
+//     int a=5;
+//     int b=7;
+//     sum(a,b);
+// }
+
 int main(){
-    int a=5;
-    int b=7;
-    sum(a,b);
+    int a=10,b=15;
+    auto sum = [=] (){
+    ++a; 
+    ++b;
+    cout<<a<<" "<<b<<endl;
+};
+    
+    inc();
+    return 0;
 }
